@@ -11,7 +11,7 @@
 
 a { 
 	text-decoration: none;
-	color: #d2474e;
+	color: #7dbbe4;
 }
 a:hover { text-decoration: underline; }
 body { 
@@ -121,14 +121,13 @@ body:after {
 	top: 0px;
 	font-size: 22px;
 	color: white;
-	background-color: black;
 	padding: 5px;
 	border-radius: 100%;
 	width: 24px;
 	height: 24px;
 	line-height: 24px;
 	text-align: center;
-	background-color: #d2474e;
+	background-color: #7dbbe4;
 }
 #bday:before { content: '\f015'; }
 #place:before { content: '\f00d'; }
@@ -156,7 +155,7 @@ body:after {
 	width: 150px;
 	margin: 10px auto;
 	color: white;
-	background-color: #d2474e;
+	background-color: #7dbbe4;
 	font-weight: 100;
 	border-radius: 5px;	
 }
@@ -195,7 +194,7 @@ body:after {
   position: absolute;
   left: 5px;
   top: 0px;
-  color: #d2474e;
+  color: #7dbbe4;
   content: '\f013';
   font-size: 20px;
 }
@@ -234,7 +233,7 @@ ul li:before {
 	left: 0px;
 	top: 3px;
 	font-family:'FortAwesome';
-	color: #d2474e;
+	color: #7dbbe4;
 }
 
 
@@ -260,6 +259,7 @@ ul li:before {
 	}
 
 	.flex { display: block; }
+  .megaContainer { padding: 0; }
 
 	.image {
 		width: 100%;
