@@ -81,10 +81,11 @@ body:after {
 	max-width: 1200px;	
 }
 
-.data, .title, .exp, .study, .hobbies, .about {
+.data, .title, .exp, .career, .hobbies, .about {
   padding: 20px;
   border-bottom: 1px solid #ecf0f1;
 }
+
 .hobbies.full{ border-bottom: 0; }
 
 .title {
@@ -114,7 +115,8 @@ body:after {
 	position: relative;
 }
 
-.row > div:before {
+.row > div:before,
+.career .subTitle:before {
 	font-family: 'FortAwesome';
 	position: absolute;
 	left: 0px;
@@ -195,14 +197,13 @@ body:after {
   left: 5px;
   top: 0px;
   color: #7dbbe4;
-  content: '\f013';
+  content: '\f016';
   font-size: 20px;
 }
 
-.study, .hobbies { font-size: 16px; }
+.career, .hobbies { font-size: 16px; }
 
-.study > div,
-.about > div {
+.blockTitle {
   font-size: 24px;
   margin-bottom: 10px;
   font-weight: 100;
@@ -212,13 +213,58 @@ p {
 	margin-bottom: 10px;
 }
 
-.study p span {	font-weight: bold; }
+.career p span {	font-weight: bold; }
 
-.study li span {
+.career li span {
 	display: block;
 	font-size: 14px;
 	color: #7f8c8d;
 	font-style: italic;
+}
+
+.career .flex {
+  justify-content: space-between;
+}
+
+.career .flex.info {
+  justify-content: center; 
+}
+
+.career .flex.info > div {
+  margin: 5px 10px;
+  font-weight: 100;
+}
+
+.career .learnedSkills {
+  margin-right: 50px;
+}
+
+.career .company { font-size: 24px; }
+.career .company a:hover {
+  text-decoration: none;
+  color: #333;
+}
+.career .time {
+  color: #bdc3c7;
+}
+.career .time,
+.career .dates {
+  padding: 6px;
+}
+
+.career .subTitle {
+  position: relative;
+  padding: 3px 35px;
+  margin: 7px 0;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.career .subTitle:before {
+  font-family:'FortAwesome';
+  content: '\f017';
+  padding: 3px;
+  font-size: 18px;
 }
 
 ul { list-style: none inside none; }
@@ -228,7 +274,7 @@ li {
 }
 
 ul li:before {
-	content: '\f016';
+	content: '\f013';
 	position: absolute;
 	left: 0px;
 	top: 3px;
@@ -301,5 +347,11 @@ ul li:before {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .career .flex.info > div { 
+    margin: 0;
+    padding: 5px;
+    text-align: center;
   }
 }
